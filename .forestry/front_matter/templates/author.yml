@@ -1,0 +1,24 @@
+---
+label: Author
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Name
+  name: title
+  config:
+    required: true
+  default: Anon. I. Moose
+- type: textarea
+  name: bio
+  label: Bio
+  config:
+    required: true
+  default: Test
+- type: file
+  name: avatar
+  label: Avatar
+  default: "/uploads/IMG_20170816_204135.jpg"
+- type: text
+  name: twitter
+  label: Twitter
