@@ -12,7 +12,7 @@
             </div>
             <nav class="nav right">
                 <g-link class="nav__link" :to="{ name: 'journal' }">Journal</g-link>
-                <g-link class="nav__link" :to="{ name: 'contact' }">Say Hi!</g-link>
+                <g-link class="nav__link" :to="{ name: 'projects' }">Projects</g-link>
             </nav>
         </div>
     </header>
