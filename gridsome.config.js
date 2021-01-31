@@ -2,10 +2,10 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Yearn Canada",
+  siteName: "Yearn",
   siteUrl: `https://www.yearn.ca`,
-  titleTemplate: "%s - Photography and Not-So-Safe Space",
-  siteDescription: "A place for me to express my mind and creativity and hopefully help people in the process.",
+  titleTemplate: "%s - For Deeper Meaning",
+  siteDescription: "Just a space to unleash some thoughts and creativity",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
