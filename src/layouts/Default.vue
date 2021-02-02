@@ -73,6 +73,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: grey;
+}
+
 img {
   max-width: 100%;
 }
