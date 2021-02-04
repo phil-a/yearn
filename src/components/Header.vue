@@ -51,7 +51,11 @@ export default {
     text-decoration: none;
 }
 .logo {
-    height: 1.5rem;
+    height: 4.5rem;
+    transition: 0.2s filter ease-in-out;
+}
+.logo:hover {
+    filter: brightness(1.1) saturate(0.7);
 }
 .site-name {
     font-size: 0.9rem;
