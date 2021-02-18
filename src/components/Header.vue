@@ -6,7 +6,7 @@
                     <img 
                         src="../../static/logo.svg"
                         :alt="settings.site_name" 
-                        class="logo"
+                        :class="logo_style"
                     />
                 </g-link>
             </div>
@@ -25,6 +25,11 @@ export default {
         logo: require("../../static/logo.svg"),
         settings: require("../../data/theme.json")
     }
+  },
+  computed: {
+      logo_style() {
+          return this.settings.dark_mode ? "logo light" : "logo dark";
+      }
   }
 }
 </script>
@@ -34,6 +39,7 @@ export default {
     position: relative;
     height: 6rem;
     z-index: 10;
+    background-color: inherit;
 }
 .header.sticky {
     position: fixed;
@@ -51,11 +57,17 @@ export default {
     text-decoration: none;
 }
 .logo {
-    height: 4.5rem;
+    height: 3.25rem;
     transition: 0.2s filter ease-in-out;
 }
+.logo.light {
+    filter: brightness(4);
+}
+.logo.dark {
+    filter: brightness(0);
+}
 .logo:hover {
-    filter: brightness(1.1) saturate(0.7);
+    filter: brightness(1) saturate(1);
 }
 .site-name {
     font-size: 0.9rem;
