@@ -1,7 +1,6 @@
 ---
 label: Journal
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -33,5 +32,3 @@ fields:
     - Anon I. Moose
   label: Author
   default: Anon I. Moose
-pages:
-- journal/macos-development-environment.md
